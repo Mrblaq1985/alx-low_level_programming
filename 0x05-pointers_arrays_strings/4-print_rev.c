@@ -2,17 +2,18 @@
 
 /**
  * print_rev - prints a string in reverse
- * @s: the used string reference pointer
- * Return: 0
+ * @s: char array string type
  */
 
 void print_rev(char *s)
 {
-	int i = 0;
+	int i;
 
-	while (s[i])
-		i++;
-	while (i--)
-		_putchar(s[i]);
+	for (i = 0; s[i] != '\0'; i++)
+		;
+
+	for (i--; i >= 0; i--)
+		putchar(s[i]);
+
 	_putchar('\n');
 }
