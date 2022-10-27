@@ -3,15 +3,15 @@
 /**
  * print_number - Prints an integer.
  * @n: input integer.
- * Return: no return.
  */
+
 void print_number(int n)
 {
-	unsigned int m, d, count;
+	unsigned int num = n;
 
 	if (n < 0)
 	{
-		putchar(45);
+		_putchar('-');
 		num = -num;
 	}
 
